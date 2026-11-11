@@ -1,0 +1,306 @@
+/* DEFINIÇÃO GERAL DO SITE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO DO SITE */
+
+body {
+    background-color: rgb(21, 13, 27);
+    background-image: url('assets/stars-background.jpg'); /* Coloque o nome da sua imagem aqui */
+    background-repeat: repeat;
+    color: rgb(204, 181, 224);
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.container {
+    background-color: #0d0714;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+    /* Cria um brilho roxo difuso nas bordas da caixa */
+    box-shadow: 0px 0 50px rgba(140, 91, 181, 0.7);
+}
+
+/* --- CABEÇALHO --- */
+
+header {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+/* BANNER */
+
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: #30253b 3px solid;
+    border-left: #30253b 1px solid;
+    border-right: #30253b 1px solid;
+}
+
+/* TÍTULO (ENTRE CARTAS) */
+
+/* Importa uma fonte mística direto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+
+.titulo-mistico {
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 4px; /* Afasta um pouco as letras para dar um ar mais elegante */
+    text-shadow: 0 0 10px rgba(241, 239, 68, 0.5), /* Brilho suave amarelo/dourado */
+                 0 0 25px rgba(140, 91, 181, 0.6); /* Brilho difuso roxo nas letras */
+    margin: 30px 0;
+}
+
+
+/* --- HIPERLINK --- */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1ef44;
+    text-decoration: underline;
+}
+
+/* MAIN & HERO */
+
+main {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 750px;
+    margin: 0 auto 60px;
+}
+
+.hero-text h2, 
+.services h2, 
+.about-section h2, 
+.hours-section h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f1ef44;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+
+/* BOTÃO */
+
+.button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #8c5bb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.button:hover {
+    background: #f1ef44;
+    color: #150d1b;
+    transform: translateY(-2px);
+}
+
+/* SEÇÃO TIRAGENS (CARDS) */
+
+.services {
+    margin-bottom: 60px;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1a1024;
+    border: 1px solid #49365c;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1;
+    min-width: 260px;
+    max-width: 320px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #8c5bb5;
+}
+
+.card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #d1c2e0;
+    margin-bottom: 20px;
+}
+
+.card .price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1ef44;
+}
+
+/* SEÇÃO SOBRE */
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 30px;
+    background: #140b1e;
+    border-radius: 12px;
+    border: 1px dashed #49365c;
+}
+
+.about-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #e2d7ed;
+}
+
+/* SEÇÃO HORÁRIOS DE ATENDIMENTO (BLOCO ÚNICO) */
+
+.hours-section {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.hours-box {
+    background: #1a1024;
+    border: 1px solid #49365c;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 25px auto 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hours-box p {
+    font-size: 17px;
+    color: #e2d7ed;
+    margin: 12px 0;
+}
+
+.hours-box span {
+    color: #f1ef44;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #49365c;
+    color: #a99bb5;
+    font-size: 14px;
+}
+
+/* CELULAR RESPONSIVO */
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .hero-text h2, 
+    .services h2, 
+    .about-section h2, 
+    .hours-section h2 {
+        font-size: 26px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+/* BOTÕES DAS REDES SOCIAIS */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #49365c;
+    background: #1a1024;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    border-color: #f1ef44;
+    color: #f1ef44;
+}
